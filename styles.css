@@ -16,7 +16,7 @@ body{
     flex-shrink: 2;
 }
 header{
-    padding-top: 64px;
+    padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 0px;
@@ -31,10 +31,22 @@ header{
 .call{
     font-weight: bold;
     font-size: 2rem;
+    color: rgb(255, 23, 243);
 }
+
+
+
+
+/*form */
 form{
     padding: 32px;
-    font-size: 1.5rem;
+    padding-bottom: 56px;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    position: relative;
+
 }
 .form-div{
     margin-bottom: 16px;
@@ -42,7 +54,65 @@ form{
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
+    min-width: 40%;
+    flex-grow: 1;
 }
-label{
+.form-div input{
+    background-color: rgb(39, 38, 38);
+    border: 2px solid #b783ff;
+    border-radius: 4px;
+    
+    padding: 4px;
     font-size: 1rem;
+    color: white;
+    
+  }
+
+  .form-div label{
+    margin-bottom: 8px;
+    color: white;
+    font-weight:400;
+  }
+.btn{
+    position: absolute;
+    bottom: 16px;
+}
+button{
+    color: white;
+    padding: 8px 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(226, 1, 215);
+    border: none;
+  }
+#btn-create-account{
+    margin-top: 16px;
+    flex: none;
+    
+}
+button:hover {
+
+    background-color: rgb(163, 1, 155); 
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+button:active {
+     transform: translateY(1px);
+}
+
+.login-text{
+    font-size: 1rem;
+    font-style: italic;
+    margin-left: 32px;
+}
+.login{
+    color: rgb(226, 1, 215);
+    text-decoration: none;
+    font-style: normal;
 }
