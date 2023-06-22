@@ -9,35 +9,39 @@
 </head>
 <body>
     <img src="./images/img-1.jpg" alt="Gaming picture" class="side-img">
+     <div class="logo-container">
+        <img src="./images/odin-lined.png" alt="odin-logo" class="logo">
+        <div class="logo-text">ODIN</div>
+    </div>
     <div class="container">
         <header>
             <div class="header-description">This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now to get started</div>
             <div class="call">GET STARTED</div>
         </header>
-        <form action="" method="get">
+        <form action="#" method="get">
             <div class="form-div">
                 <label for="first-name">FIRST NAME</label>
-                <input id= "first-name" type="text" name="first-name">
+                <input id= "first-name" type="text" required placeholder="John" name="first-name">
             </div>
             <div class="form-div">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name">
+                <input type="text" placeholder="Doe" required id="last-name" name="last-name">
             </div>
             <div class="form-div">
                 <label for="email">E-MAIL</label>
-                <input type="email" id="email" name="email">
+                <input type="email" placeholder="johndoe@example.com" required id="email" name="email">
             </div>
             <div class="form-div">
                 <label for="phone-number">PHONE NUMBER</label>
-                <input type="text" inputmode="numeric" id="phone-number" name="phone-number">
+                <input type="text" inputmode="numeric" required id="phone-number" name="phone-number">
             </div>
             <div class="form-div">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
+                <input type="password" minlength="6" name="password" required id="password">
             </div>
             <div class="form-div">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password" name="confirmed-password">
+                <input type="password" minlength="6" id="confirm-password" required name="confirmed-password">
             </div>
             <div class="btn">
                 <button type="submit" id="btn-create-account">Create Account</button>

@@ -1,20 +1,52 @@
 
+:root{
+    --dark-bg: rgb(39, 38, 38);
+    --side-img-width: 400px;
+}
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
 body{
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(39, 38, 38);
+    background-color: var(--dark-bg);
     color: white;
+    position: relative;
 
 }
 .side-img{
     height: auto;
-    width: 460px;
+    width: var(--side-img-width);
     margin: 0;
     flex-shrink: 2;
 }
+
+.logo-container{
+    background-color: rgba(39, 38, 38,0.4);
+    width: var(--side-img-width);
+    height: 25%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-family: norse-bold;
+    font-size: 100px;
+
+}
+.logo{
+    height: 80%;
+}
+.container{
+    padding-bottom: 32px;
+}
+
 header{
     padding-top: 32px;
     padding-left: 32px;
@@ -58,21 +90,35 @@ form{
     flex-grow: 1;
 }
 .form-div input{
-    background-color: rgb(39, 38, 38);
+    background-color: var(--dark-bg);
     border: 2px solid #b783ff;
     border-radius: 4px;
     
-    padding: 4px;
+    padding: 6px;
     font-size: 1rem;
     color: white;
     
   }
+input:focus, input:active{
+    border: 2px solid rgb(255, 23, 243);
+    outline: none;
+    background-color: var(--dark-bg);
+}
+
+    
+
+input[type="email"]:invalid{
+    border: 2px solid #ff0141;
+}
 
   .form-div label{
     margin-bottom: 8px;
     color: white;
     font-weight:400;
   }
+
+
+
 .btn{
     position: absolute;
     bottom: 16px;
