@@ -1,8 +1,11 @@
-
 :root{
     --dark-bg: rgb(39, 38, 38);
-    --side-img-width: 400px;
+    --side-img-width: 460px;
 }
+html{
+    background-color: var(--dark-bg);
+}
+
 @font-face {
     font-family: norse-bold;
     src: url(./fonts/Norse-Bold.otf);
@@ -12,22 +15,25 @@ body{
     margin: 0;
     display: flex;
     flex-direction: row;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--dark-bg);
+    
     color: white;
     position: relative;
+    min-height: 100vh;
 
 }
 .side-img{
-    height: auto;
-    width: var(--side-img-width);
+    
+    width: 35vw;
+    
     margin: 0;
-    flex-shrink: 2;
+    
 }
 
 .logo-container{
     background-color: rgba(39, 38, 38,0.4);
-    width: var(--side-img-width);
+    width: 35vw;
     height: 25%;
     position: absolute;
     left: 0;
@@ -41,10 +47,14 @@ body{
 
 }
 .logo{
-    height: 80%;
+    height: 125px;
 }
+
+/*main content*/
 .container{
     padding-bottom: 32px;
+    height: 100%;
+    
 }
 
 header{
@@ -105,11 +115,7 @@ input:focus, input:active{
     background-color: var(--dark-bg);
 }
 
-    
 
-input[type="email"]:invalid{
-    border: 2px solid #ff0141;
-}
 
   .form-div label{
     margin-bottom: 8px;
